@@ -1,0 +1,150 @@
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 433px;
+}
+
+.desktopBg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/girls.png);
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+
+.mobileBg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/girlMobile.png);
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .desktopBg {
+        display: block;
+    }
+
+    .mobileBg {
+        display: none;
+    }
+}
+
+.overlay::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.textContainer {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.heading {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: white;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-primary);
+}
+
+.description {
+    font-size: 16px;
+    color: white;
+    font-family: var(--font-lato);
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.modal {
+    display: none;
+}
+
+.modalBox {
+    position: relative;
+    background: transparent;
+    padding: 0;
+}
+
+.closeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: black;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.closeIcon {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    transition: opacity 0.5s;
+    opacity: 1;
+}
+
+.modalBackdrop {
+    display: none;
+}
+
+.waitlistButton {
+    width: 300px;
+    padding: 0.5rem;
+    background-color: #ff97a8;
+    color: black;
+    border: none;
+    border-radius: 9999px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--font-lato);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.waitlistButton:hover {
+    background-color: #ff97a8;
+}
+
+.sparkleIcon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.buttonText {
+    tracking: -0.5px;
+}

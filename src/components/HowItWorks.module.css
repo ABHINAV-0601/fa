@@ -1,0 +1,100 @@
+.heroSection {
+    color: white;
+    padding: 4rem 1.25rem;
+    background-size: cover;
+    background-position: center;
+    height: 490px;
+    background-image: url(../assets/sky.png);
+}
+
+@media (width >=1500px) {
+    .heroSection {
+        height: 600px;
+    }
+}
+
+.heading {
+    text-align: start;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 2rem;
+    font-family: var(--font-primary);
+}
+
+@media (min-width: 768px) {
+    .heading {
+        text-align: center;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0 auto;
+    max-width: 600px;
+    gap: 3rem;
+}
+
+.step {
+    display: flex;
+    align-items: start;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.iconWrapper {
+    flex-shrink: 0;
+    padding: 1rem;
+    background: #51658e;
+    border-radius: 8px;
+}
+
+.icon {
+    color: white;
+    width: 24px;
+    height: 24px;
+}
+
+.stepTitle {
+    font-size: 18px;
+    font-family: var(--font-lato);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.stepText {
+    color: #cccfD6;
+    font-family: var(--font-lato);
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5rem;
+}
+
+.downArrow {
+    position: absolute;
+    top: -44px;
+    left: 80px;
+    width: 42px;
+    height: 45px;
+}
+
+.twistedArrow {
+    position: absolute;
+    top: -52px;
+    left: 136px;
+    width: 48px;
+    height: 61px;
+}
+
+@media (min-width: 768px) {
+    .twistedArrow {
+        top: -40px;
+    }
+}

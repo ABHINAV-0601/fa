@@ -1,0 +1,139 @@
+.missionSection {
+    background-color: #f9fafb;
+    padding: 5rem 0;
+}
+
+.container {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+@media (width <=350px) {
+    .container {
+        width: 340px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 550px;
+        padding: 0;
+    }
+}
+
+.heading {
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .heading {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--font-primary);
+}
+
+.heartIcon {
+    position: absolute;
+    right: 4px;
+    top: -12px;
+}
+
+@media (min-width: 768px) {
+    .heartIcon {
+        right: 60px;
+    }
+}
+
+.description {
+    font-family: var(--font-lato);
+    font-size: 16px;
+    color: #384252;
+    margin-bottom: 1.5rem;
+    text-align: start;
+}
+
+@media (min-width: 768px) {
+    .description {
+        text-align: center;
+        padding: 0 1rem;
+    }
+}
+
+.purpose {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    text-align: start;
+}
+
+@media (min-width: 768px) {
+    .purpose {
+        text-align: center;
+    }
+}
+
+.purposeIntro {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font-lato);
+}
+
+.purposeHighlight {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: var(--font-lato);
+}
+
+.purposeEasier {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: var(--font-lato);
+    color: #ff8095;
+}
+
+.purposeComma {
+    color: black;
+    font-family: var(--font-lato);
+}
+
+.purposeAnd {
+    color: black;
+    font-family: var(--font-lato);
+}
+
+.understandingText {
+    font-size: 16px;
+    font-family: var(--font-lato);
+    color: #384252;
+    margin-bottom: 1.5rem;
+    text-align: start;
+}
+
+@media (min-width: 768px) {
+    .understandingText {
+        text-align: center;
+    }
+}
+
+.image {
+    width: 100%;
+    max-width: 32rem;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

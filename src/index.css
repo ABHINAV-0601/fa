@@ -1,0 +1,11 @@
+:root {
+    --font-primary: "Fraunces", serif;
+    --font-poppins: "Poppins", serif;
+    --font-lato: "Lato", serif;
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5rem;
+}
